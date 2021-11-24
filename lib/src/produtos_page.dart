@@ -11,7 +11,7 @@ class _ProdutosPageState extends State<ProdutosPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Lista de produtos')),
+      appBar: AppBar(title: const Text('Detalhe do produto')),
       extendBody: true,
       body: SingleChildScrollView(
         child: SizedBox(

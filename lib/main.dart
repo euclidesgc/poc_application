@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         dividerColor: Colors.transparent,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Lista de produtos'),
       routes: {
         '/produtos': (context) => const ProdutosPage(),
       },
@@ -43,7 +43,12 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             GestureDetector(
-              child: const Text('1) Lista de produtos - Mobx'),
+              child: const Text('Produto 01'),
+              onTap: () => Navigator.pushNamed(context, '/produtos'),
+            ),
+            const SizedBox(height: 16),
+            GestureDetector(
+              child: const Text('Produto 02'),
               onTap: () => Navigator.pushNamed(context, '/produtos'),
             ),
           ],
